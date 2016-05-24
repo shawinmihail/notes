@@ -1,0 +1,16 @@
+sudo apt-get install build-essential python3-dev python3-pyqt5 pyqt5-dev-tools
+
+download and install sip.
+https://riverbankcomputing.com/software/sip/download
+sudo python3 configure.py
+make
+make install
+
+download and install Qt.
+https://www.qt.io/download-open-source/
+
+pyqt5.
+https://riverbankcomputing.com/software/pyqt/download5
+python3 configure.py --qmake ~/Qt/5.6/gcc_64/bin/qmake
+make
+make install
