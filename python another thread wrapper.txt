@@ -1,0 +1,7 @@
+def another_thread(func):
+
+    def wrapper(*args):
+        worker = Thread(target=func, args=args, daemon=False)
+        worker.start()
+
+    return wrapper
